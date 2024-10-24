@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+  httpd-service:
+    build: .
+    ports:
+      - 81:80
+    volumes:
+      - Barista-cafe-vol:/usr/local/apache2/htdocs
+volumes:
+  Barista-cafe-vol:
